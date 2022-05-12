@@ -1,0 +1,8 @@
+fastapi 
+uvicorn 
+pickle
+numpy 
+json 
+pandas 
+tensorflow 
+texthero 
