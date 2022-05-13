@@ -5,4 +5,5 @@ numpy
 json 
 pandas 
 tensorflow 
-texthero 
+texthero
+matplotlib
