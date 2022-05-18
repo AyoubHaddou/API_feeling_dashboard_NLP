@@ -1,12 +1,10 @@
 fastapi 
 streamlit
 uvicorn 
-pickle
 numpy 
 json 
 pandas 
 tensorflow 
 texthero
 matplotlib
-pickle
 pickle-mixin
