@@ -2,7 +2,6 @@ fastapi
 streamlit
 uvicorn 
 numpy 
-json 
 pandas 
 tensorflow 
 texthero
