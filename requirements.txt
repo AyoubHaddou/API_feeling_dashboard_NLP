@@ -6,4 +6,3 @@ pandas
 tensorflow 
 texthero
 matplotlib
-pickle-mixin
