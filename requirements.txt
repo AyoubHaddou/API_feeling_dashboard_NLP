@@ -1,6 +1,6 @@
 fastapi==0.75.0
 streamlit==1.8.1
-uvicorn==0.17.6
+uvicorn
 numpy==1.22.3
 tensorflow==0.25.0
 matplotlib==3.5.1
