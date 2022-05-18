@@ -5,4 +5,5 @@ numpy==1.22.3
 tensorflow==0.25.0
 matplotlib==3.5.1
 texthero==1.0
+gunicorn
 pandas
