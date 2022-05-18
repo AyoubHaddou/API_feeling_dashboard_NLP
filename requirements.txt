@@ -3,6 +3,6 @@ streamlit==1.8.1
 uvicorn==0.17.6
 numpy==1.22.3
 tensorflow==0.25.0
-pandas
 matplotlib==3.5.1
-texthero==2.0
+texthero==1.0
+pandas
