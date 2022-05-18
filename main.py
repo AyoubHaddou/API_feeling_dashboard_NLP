@@ -3,7 +3,6 @@ from fastapi import FastAPI
 import uvicorn 
 import pickle 
 import numpy as np 
-import json 
 import pandas as pd
 from tensorflow import keras
 from tensorflow.keras.preprocessing.sequence import pad_sequences
