@@ -1,9 +1,9 @@
-gunicorn
-fastapi==0.75.0
-streamlit==1.8.1
-uvicorn
-numpy==1.22.3
-tensorflow==0.25.0
-matplotlib==3.5.1
-texthero==1.0
 pandas
+tensorflow
+fastapi
+streamlit
+uvicorn
+numpy
+matplotlib
+texthero
+gunicorn
