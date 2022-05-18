@@ -1,7 +1,20 @@
 FROM python:latest
 
+WORKDIR /API_feeling_dashboard_NLP
+
 ADD main.py .
 
-RUN pip install fastapi uvicorn pickle numpy json pandas tensorflow texthero matplotlib pickle 
+RUN apt-get update
+RUN apt-get install \
+    'ffmpeg'\
+    'libsm6'\
+    'libxext6'  -y
 
-CMD [ "python","main.py" ]
+COPY requirements.txt .
+RUN pip install -r requirements.txt
+
+COPY . .
+
+EXPOSE 8080
+
+CMD ["python", "main.py"]
