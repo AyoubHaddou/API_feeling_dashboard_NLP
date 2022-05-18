@@ -8,4 +8,5 @@ pandas
 tensorflow 
 texthero
 matplotlib
+pickle
 pickle-mixin
