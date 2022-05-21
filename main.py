@@ -9,6 +9,8 @@ from tensorflow import keras
 from tensorflow.keras.preprocessing.sequence import pad_sequences
 import texthero as hero 
 from texthero import stopwords
+import os 
+port = int(os.environ.get('PORT', 6702)) 
 
 
 # # Save le model : 
