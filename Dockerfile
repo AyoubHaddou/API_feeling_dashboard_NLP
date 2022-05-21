@@ -1,11 +1,11 @@
 FROM python:3.9.7
 
-COPY requirements.txt app/requirements.txt
-
-WORKDIR /app
+ENV PORT=$PORT
 
 RUN pip install -r requirements.txt
 
 COPY . /app
 
-CMD ["uvicorn", "main:app", "--host=0.0.0.0", "--port", "5000" , "--reload"]
+EXPOSE $PORT
+
+CMD uvicorn main:app --host 0.0.0.0 --port $PORT
