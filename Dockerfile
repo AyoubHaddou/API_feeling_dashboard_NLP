@@ -1,13 +1,16 @@
 FROM python:3.9.7
 
-COPY requirements.txt app/requirements.txt
+# 
+WORKDIR /code
 
-WORKDIR /app
+# 
+COPY ./requirements.txt /code/requirements.txt
 
-RUN pip install -r requirements.txt
+# 
+RUN pip install -r /code/requirements.txt
 
-COPY . /app
+# 
+COPY ./app /code/app
 
-EXPOSE 8080
-
-CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8080" , "--reload"]
+# 
+CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "80"]
