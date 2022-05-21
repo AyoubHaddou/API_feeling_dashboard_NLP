@@ -68,7 +68,3 @@ def prediction_lgbm(Data):
 @app.get("/")
 def pred():
     return {'NLP-predict-feelings api path' : "/predict/"}
-
-if __name__ == "__main__":
-    uvicorn.run("main:app", host="0.0.0.0", port=3200, log_level="info")
-
