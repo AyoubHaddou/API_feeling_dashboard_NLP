@@ -1,13 +1,11 @@
 FROM python:3.9.7
 
-COPY requirements.txt app/requirements.txt
+WORKDIR /app
 
-WORKDIR /API_FEELING_DASHBOARD
+COPY requirements.txt app/requirements.txt
 
 RUN pip install -r requirements.txt
 
-COPY . /API_FEELING_DASHBOARD
-
-EXPOSE 8000
+COPY . /app
 
 CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "80" , "--reload"]
