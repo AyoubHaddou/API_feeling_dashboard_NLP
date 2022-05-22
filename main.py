@@ -60,8 +60,8 @@ def preprocessing_pred(sentence):
         return 'error'
 
 @app.post("/predict/")
-async def prediction_lgbm(Data):
-    return preprocessing_pred(Data)
+async def prediction_lgbm(data : str):
+    return preprocessing_pred(data)
 
 @app.get("/")
 def pred():
