@@ -5,7 +5,7 @@ COPY requirements.txt app/requirements.txt
 
 WORKDIR /app
 
-ENV PORT=6702
+ENV PORT=$port
 
 RUN pip install -r requirements.txt
 
