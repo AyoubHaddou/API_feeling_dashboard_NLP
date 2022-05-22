@@ -41,7 +41,7 @@ def preprocessing_pred(sentence):
     max_length = 30
     pad_sentences = pad_sequences(df_pred.processed, maxlen=max_length,padding='post')
 
-    model = keras.models.load_model('model89')
+    model = keras.models.load_model('model89.h5')
     result = np.argmax(model.predict(np.array(pad_sentences)))
 
     if result == 0 :
