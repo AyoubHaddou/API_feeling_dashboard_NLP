@@ -13,4 +13,4 @@ EXPOSE $PORT
 
 COPY . /app
 
-CMD uvicorn main:app --host 0.0.0.0 --port $PORT --reload
+ENTRYPOINT ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", $PORT , "--reload"]
