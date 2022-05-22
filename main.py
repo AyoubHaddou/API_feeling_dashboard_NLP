@@ -60,12 +60,12 @@ def preprocessing_pred(sentence):
         return 'error'
 
 @app.post("/predict/")
-def prediction_lgbm(Data):
+async def prediction_lgbm(Data):
     return preprocessing_pred(Data)
 
 @app.get("/")
 def pred():
-    return {'NLP-predict-feelings api path' : "/predict/"}
+    return {'NLP-predict-emotions' : "/predict/"}
 
 if __name__ == "__main__":
     uvicorn.run("main:app", host="0.0.0.0", port=6705, log_level="info")
