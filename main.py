@@ -9,10 +9,6 @@ from tensorflow import keras
 from tensorflow.keras.preprocessing.sequence import pad_sequences
 import texthero as hero 
 from texthero import stopwords
-import os 
-port = int(os.environ.get('PORT', 6502)) 
-
-print(port)
 # # Save le model : 
 # model = ...  # Get model (Sequential, Functional Model, or Model subclass)
 # model.save('path/to/location')
@@ -72,5 +68,5 @@ def pred():
     return {'NLP-predict-feelings api path' : "/predict/"}
 
 if __name__ == "__main__":
-    uvicorn.run("main:app", host="0.0.0.0", port=port, log_level="info")
+    uvicorn.run("main:app", host="0.0.0.0", port=6705, log_level="info")
 
