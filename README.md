@@ -1,3 +1,6 @@
+# Model 
+Lien du colab avec l'entrainement des modèles : https://colab.research.google.com/drive/1sneeyKaEnm7swvXEa7PDPjxOHWHOSLtk?usp=sharing
+
 # API_feeling_dashboard_NLP
 
 API déployé dans un docker et hebergé sur Heroku.
